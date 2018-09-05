@@ -7,17 +7,8 @@
 
 #include <stdio.h>
 
-int main() {
-	int i, j, pos, array[100], temp, size;
-
-	printf("Enter number of elements in the array : ");
-	scanf("%d", &size);
-
-	printf("Enter the array\n");
-	for (i=0; i<size; i++) {
-		scanf("%d", &array[i]);
-	}
-	
+int selectionSort(int array[], int size) {
+	int i, j, pos, temp;
 	for (i=0; i<size; i++) {
 		pos = i;
 
@@ -32,6 +23,20 @@ int main() {
 			array[pos] = temp;
 		}
 	}
+}
+
+int main() {
+	int i, j, pos, array[100], temp, size;
+
+	printf("Enter number of elements in the array : ");
+	scanf("%d", &size);
+
+	printf("Enter the array\n");
+	for (i=0; i<size; i++) {
+		scanf("%d", &array[i]);
+	}
+	
+	selectionSort(array, size);
 
 	printf("Sorted array \n");
 	for (i=0; i<size; i++) {
