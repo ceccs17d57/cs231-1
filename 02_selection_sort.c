@@ -1,6 +1,6 @@
 /*
- * 01
- * Sequential Search
+ * 02
+ * Selection Sort
  * Author : Nikhil M Tomy
  * 
  */
