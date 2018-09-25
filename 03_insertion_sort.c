@@ -1,6 +1,6 @@
 /*
  * 03
- * Selection Sort
+ * Insertion Sort
  * Author : Nikhil M Tomy
  * 
  */
