@@ -14,7 +14,7 @@ CS231 lab projects
  - [X] 10: Binary search  
   #### Linked list implementation and search, delete, insert operations (11 - 14)
  - [X] 11: Singly LL  
- - [ ] 12: Doubly LL  
+ - [X] 12: Doubly LL  
  - [ ] 13: Circular Singly LL  
  - [ ] 14: Circular Doubly LL  
  - [ ] 15: Representation of polynomial using LL  
