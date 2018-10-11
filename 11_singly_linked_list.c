@@ -24,8 +24,8 @@ struct node *newNode() {
 	return (newptr);
 }
 int deleteNode(int data) {
-	struct node *currentNode = HEADER->next, *previousNode=HEADER;
-	while(currentNode->data != data && currentNode !=NULL) {
+	struct node *currentNode = HEADER, *previousNode;
+	while(currentNode->next != NULL && currentNode->data != data) {
 		previousNode = currentNode;
 		currentNode = currentNode->next;
 	}

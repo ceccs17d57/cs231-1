@@ -106,8 +106,8 @@ int deleteLastNode () {
   return (0);
 }
 int deleteNode(int data) {
-  struct node *currentNode = HEADER->next;
-  while (currentNode != NULL && currentNode->data != data) {
+  struct node *currentNode = HEADER;
+  while (currentNode->next != NULL && currentNode->data != data) {
     currentNode = currentNode->next;
   }
   if (currentNode->data != data) {

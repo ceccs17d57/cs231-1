@@ -16,16 +16,16 @@ int deleteAll() {
   return (0);
 }
 int deleteNode(int data) {
-  struct node *currentNode = HEADER->next, *previousNode;
-  while (currentNode != HEADER && currentNode->data != data) {
+  struct node *currentNode = HEADER, *previousNode;
+  while (currentNode->next != HEADER && currentNode->data != data) {
     previousNode = currentNode;
     currentNode = currentNode->next;
   }
-  if (currentNode == HEADER) {
-    printf("Deletion failed. Node not found\n");
-  } else {
+  if (currentNode->data == data) {
     previousNode->next = currentNode->next;
     free(currentNode);
+  } else {
+    printf("Deletion failed. Node not found\n");
   }
   return (0);
 }
