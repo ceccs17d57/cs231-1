@@ -123,7 +123,7 @@ int deleteNode(int data) {
 }
 int printAll() {
   struct node* currentNode = HEADER->next;
-  printf("NULL->HEADER<->");
+  printf("NULL<-HEADER<->");
   while (currentNode->next != NULL) {
     printf("%d<->", currentNode->data);
     currentNode = currentNode->next;
