@@ -20,7 +20,7 @@ CS231 lab projects
  - [ ] 15: Representation of polynomial using LL  
  - [ ] 16: Polynomial addition  
  - [ ] 17: Polynomial multiplication  
- - [ ] 18: Implementation of stack using array  
+ - [X] 18: Implementation of stack using array  
  - [ ] 19: Stack using LL  
  - [ ] 20: Multiple stack using array  
  - [ ] 21: Representation of arithmetic expressions using linked list  
