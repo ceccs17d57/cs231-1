@@ -7,7 +7,7 @@ CS231 lab projects
  - [X] 03: Insertion sort  
  - [X] 04: Bubble sort  
  - [ ] 05: Merge sort: non-recursive  
- - [ ] 06: Merge sort: recursive  
+ - [X] 06: Merge sort: recursive  
  - [ ] 07: Quick sort: non-recursive  
  - [ ] 08: Quick sort: recursive  
  - [ ] 09: Heap sort  
