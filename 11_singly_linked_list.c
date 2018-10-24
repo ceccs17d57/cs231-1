@@ -12,6 +12,7 @@ int deleteAll() {
 		ptr = ptr->next;
 		free(prevPtr);
 	}
+	HEADER->next = NULL;
 	return (0);
 }
 struct node *newNode() {

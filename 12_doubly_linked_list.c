@@ -14,6 +14,7 @@ int deleteAll() {
     currentNode = currentNode->next;
     free(previousNode);
   }
+	HEADER->next=NULL;
   return (0);
 }
 struct node* newNode() {
