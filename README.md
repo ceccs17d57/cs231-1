@@ -16,7 +16,7 @@ CS231 lab projects
  - [X] 11: Singly LL  
  - [X] 12: Doubly LL  
  - [X] 13: Circular Singly LL  
- - [ ] 14: Circular Doubly LL  
+ - [X] 14: Circular Doubly LL  
  - [ ] 15: Representation of polynomial using LL  
  - [ ] 16: Polynomial addition  
  - [ ] 17: Polynomial multiplication  
