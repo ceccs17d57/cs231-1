@@ -36,7 +36,7 @@ int main() {
 	for (i=0; i<size; i++) {
 		scanf("%d", &a[i]);
 	}
-	printf("finished reading\n");
+	printf("Sorted array\n");
 	for (currentSize=1; currentSize<size; currentSize*=2) {
 		for (l=0; l<size-1; l+=2*currentSize) {
 			m=l+currentSize-1;
