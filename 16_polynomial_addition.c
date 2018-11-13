@@ -49,7 +49,7 @@ int addPolynomial(struct node *a, struct node *b, struct node *sum) {
 			insertNodeEnd(sum, cb->exponent, cb->coefficient);
 			cb=cb->next;
 		} else {
-			insertNodeEnd(sum, ca->exponent, ca->exponent+cb->coefficient);
+			insertNodeEnd(sum, ca->exponent, ca->coefficient+cb->coefficient);
 			ca=ca->next;
 			cb=cb->next;
 		}
