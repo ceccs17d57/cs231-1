@@ -6,17 +6,22 @@ void swap(int *a, int *b) {
 	*b = temp;
 }
 int partition(int array[], int low, int high) {
-	int i=low;
-	int j=high;
+	int i=low-1;
+	int j=high+1;
 	int pivot=array[low];
 	while (1) {
-		while (array[i] < pivot)
+		do {
 			i++;
-		while (array[j] > pivot)
+			printf("\ni=%d", i);
+		} while (array[i] < pivot);
+		do {
 			j--;
+			printf("\nj=%d", j);
+		} while (array[j] > pivot);
 		if (i>=j)
 			return j;
 		swap(&array[i], &array[j]);
+		printArray(array, size);
 	}
 }
 void quickSort(int array[], int low, int high) {
