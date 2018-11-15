@@ -12,16 +12,13 @@ int partition(int array[], int low, int high) {
 	while (1) {
 		do {
 			i++;
-			printf("\ni=%d", i);
 		} while (array[i] < pivot);
 		do {
 			j--;
-			printf("\nj=%d", j);
 		} while (array[j] > pivot);
 		if (i>=j)
 			return j;
 		swap(&array[i], &array[j]);
-		printArray(array, size);
 	}
 }
 void quickSort(int array[], int low, int high) {

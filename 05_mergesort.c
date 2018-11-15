@@ -48,5 +48,4 @@ int main() {
 		}
 	}
 	printArray(a, size);
-
 }
