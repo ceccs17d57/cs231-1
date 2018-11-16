@@ -26,19 +26,6 @@ struct node *newNode() {
 	}
 	return (newptr);
 }
-int insertNodeEnd(struct node *polynomial, int exponent, int coefficient) {
-	struct node *newptr = newNode(), *currentNode = polynomial;
-
-	while (currentNode->next != NULL) {
-		currentNode = currentNode->next;
-	}
-
-	newptr->next = currentNode->next;
-	newptr->exponent = exponent;
-	newptr->coefficient = coefficient;
-	currentNode->next = newptr;
-	return (0);
-}
 int multiplyPolynomial(struct node *a, struct node *b, struct node *product) {
 	struct node *ca=a->next, *cb=b->next, *cp, *cpPrev;
 	int coefficient, exponent;
@@ -54,18 +41,14 @@ int multiplyPolynomial(struct node *a, struct node *b, struct node *product) {
 				cpPrev = cp;
 				cp = cp->next;
 			}
-			if (cp == NULL) {
-				insertNodeEnd(product, exponent, coefficient);
+			if (cp->exponent == exponent) {
+				cp->coefficient += coefficient;
 			} else {
-				if (cp->exponent == exponent) {
-					cp->coefficient += coefficient;
-				} else if (cp->exponent < exponent) {
-					struct node *newPtr = newNode();
-					newPtr->next = cpPrev->next;
-					newPtr->exponent = exponent;
-					newPtr->coefficient = coefficient;
-					cpPrev->next = newPtr;
-				}
+				struct node *newPtr = newNode();
+				newPtr->next = cpPrev->next;
+				newPtr->exponent = exponent;
+				newPtr->coefficient = coefficient;
+				cpPrev->next = newPtr;
 			}
 			cb = cb->next;
 		}
