@@ -49,7 +49,7 @@ int deleteFirstNode() {
 	return (0);
 }
 int deleteLastNode() {
-	struct node *currentNode = HEADER, *previousNode;
+	struct node *currentNode = HEADER->next, *previousNode=HEADER;
 	if (currentNode == NULL) {
 		printf("Empty linked list.\nDeletion failed.\n");
 	} else {
