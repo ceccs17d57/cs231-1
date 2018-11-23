@@ -30,7 +30,7 @@ CS231 lab projects
  - [ ] 25: MAZE problem representation and solution  
  - [X] 26: Implementation of queue using array  
  - [X] 27: Implementation of dequeue using array  
- - [ ] 28: Implementation of circular queue using array  
+ - [X] 28: Implementation of circular queue using array  
  - [ ] 29: Implementation of queue using LL  
  - [ ] 30: Implementation of dequeue using LL  
  - [ ] 31: Implementation of circular queue using LL  
