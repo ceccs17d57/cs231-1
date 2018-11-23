@@ -25,7 +25,7 @@ CS231 lab projects
  - [X] 20: Multiple stack using array  
  - [X] 21: Representation of arithmetic expressions using linked list  
  - [X] 22: Stack: Infix to postfix conversion  
- - [ ] 23: Stack: Postfix expression evaluation  
+ - [X] 23: Stack: Postfix expression evaluation  
  - [ ] 24: Stack: Infix expression evaluation  
  - [ ] 25: MAZE problem representation and solution  
  - [X] 26: Implementation of queue using array  
