@@ -31,7 +31,7 @@ CS231 lab projects
  - [X] 26: Implementation of queue using array  
  - [X] 27: Implementation of dequeue using array  
  - [X] 28: Implementation of circular queue using array  
- - [ ] 29: Implementation of queue using LL  
+ - [X] 29: Implementation of queue using LL  
  - [ ] 30: Implementation of dequeue using LL  
  - [ ] 31: Implementation of circular queue using LL  
   #### Binary tree operations: creation, insertion, deletion, traversal (32-33)  
