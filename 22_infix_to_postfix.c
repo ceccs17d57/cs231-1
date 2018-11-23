@@ -48,7 +48,7 @@ int main () {
       }
       top--;
     } else if (instackPriority(stack[top])>incomingPriority(infix[i])) {
-      while (instackPriority(stack[top])>incomingPriority(infix[i])) {
+      while (instackPriority(stack[top])>incomingPriority(infix[i]) && top>-1) {
         printf("%c", stack[top--]);
       }
       stack[++top] = infix[i];
