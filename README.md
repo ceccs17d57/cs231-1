@@ -22,7 +22,7 @@ CS231 lab projects
  - [X] 17: Polynomial multiplication  
  - [X] 18: Implementation of stack using array  
  - [X] 19: Stack using LL  
- - [ ] 20: Multiple stack using array  
+ - [X] 20: Multiple stack using array  
  - [ ] 21: Representation of arithmetic expressions using linked list  
  - [ ] 22: Stack: Infix to postfix conversion  
  - [ ] 23: Stack: Postfix expression evaluation  
