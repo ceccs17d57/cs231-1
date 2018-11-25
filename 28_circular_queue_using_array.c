@@ -45,7 +45,7 @@ void printQueue() {
       printf("%d:", queue[i]);
     }
     for (;i<front; i++) {
-      printf("-:", queue[i]);
+      printf("-:");
     }
     for (;i<size;i++) {
       printf("%d:", queue[i]);

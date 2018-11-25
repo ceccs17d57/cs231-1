@@ -76,6 +76,19 @@ int printPolynomial(struct node *polynomial, char polynomialName) {
 	printf("\n");
 	return (0);
 }
+int insertNodeEnd(struct node *polynomial, int exponent, int coefficient) {
+	struct node *newptr = newNode(), *currentNode = polynomial;
+
+	while (currentNode->next != NULL) {
+		currentNode = currentNode->next;
+	}
+
+	newptr->next = currentNode->next;
+	newptr->exponent = exponent;
+	newptr->coefficient = coefficient;
+	currentNode->next = newptr;
+	return (0);
+}
 int populatePolynomial(struct node *polynomial) {
 	char choice;
 	int coefficient, exponent;

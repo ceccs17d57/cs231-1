@@ -36,7 +36,7 @@ int main () {
   char infix[20], stack[100];
   int i, top=-1;
   printf("Enter the infix expression : ");
-  scanf(" %s", &infix);
+  scanf(" %s", infix);
   for (i=0; infix[i] != '\0'; i++) {
     if (isOperand(infix[i])) {
       printf("%c", infix[i]);

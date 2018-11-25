@@ -35,7 +35,7 @@ int main() {
   int stack[100];
   int i, top=-1, x, y;
   printf("Enter the postfix expression : ");
-  scanf(" %s", &postfix);
+  scanf(" %s", postfix);
   for (i=0; postfix[i] != '\0'; i++) {
     if (isOperand(postfix[i])) {
       stack[++top] = postfix[i]-48;

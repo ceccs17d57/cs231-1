@@ -57,7 +57,7 @@ int main() {
 	// finished initializing Linked List
 
   printf("Enter arithmatic expression : ");
-  scanf("%s", &infix);
+  scanf("%s", infix);
   for (i=0; infix[i]!='\0'; i++) {
     insertNodeEnd(infix[i]);
   }
