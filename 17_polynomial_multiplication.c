@@ -26,6 +26,19 @@ struct node *newNode() {
 	}
 	return (newptr);
 }
+int insertNodeEnd(struct node *polynomial, int exponent, int coefficient) {
+	struct node *newptr = newNode(), *currentNode = polynomial;
+
+	while (currentNode->next != NULL) {
+		currentNode = currentNode->next;
+	}
+
+	newptr->next = currentNode->next;
+	newptr->exponent = exponent;
+	newptr->coefficient = coefficient;
+	currentNode->next = newptr;
+	return (0);
+}
 int multiplyPolynomial(struct node *a, struct node *b, struct node *product) {
 	struct node *ca=a->next, *cb=b->next, *cp, *cpPrev;
 	int coefficient, exponent;
@@ -41,14 +54,18 @@ int multiplyPolynomial(struct node *a, struct node *b, struct node *product) {
 				cpPrev = cp;
 				cp = cp->next;
 			}
-			if (cp->exponent == exponent) {
-				cp->coefficient += coefficient;
+			if (cp == NULL) {
+				insertNodeEnd(product, exponent, coefficient);
 			} else {
-				struct node *newPtr = newNode();
-				newPtr->next = cpPrev->next;
-				newPtr->exponent = exponent;
-				newPtr->coefficient = coefficient;
-				cpPrev->next = newPtr;
+				if (cp->exponent == exponent) {
+					cp->coefficient += coefficient;
+				} else if (cp->exponent < exponent) {
+					struct node *newPtr = newNode();
+					newPtr->next = cpPrev->next;
+					newPtr->exponent = exponent;
+					newPtr->coefficient = coefficient;
+					cpPrev->next = newPtr;
+				}
 			}
 			cb = cb->next;
 		}
@@ -65,7 +82,11 @@ int printPolynomial(struct node *polynomial, char polynomialName) {
 			}
 			if (currentNode->exponent != 0) {
 				printf("x^%d", currentNode->exponent);
-			}
+			} else {
+        if (currentNode->coefficient == 1) {
+          printf("1");
+        }
+      }
 			if (currentNode->next != NULL) {
 				if (currentNode->next->coefficient != 0)
 					printf(" + ");
@@ -74,19 +95,6 @@ int printPolynomial(struct node *polynomial, char polynomialName) {
 		currentNode = currentNode->next;
 	}
 	printf("\n");
-	return (0);
-}
-int insertNodeEnd(struct node *polynomial, int exponent, int coefficient) {
-	struct node *newptr = newNode(), *currentNode = polynomial;
-
-	while (currentNode->next != NULL) {
-		currentNode = currentNode->next;
-	}
-
-	newptr->next = currentNode->next;
-	newptr->exponent = exponent;
-	newptr->coefficient = coefficient;
-	currentNode->next = newptr;
 	return (0);
 }
 int populatePolynomial(struct node *polynomial) {

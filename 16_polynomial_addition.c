@@ -73,7 +73,11 @@ int printPolynomial(struct node *polynomial, char polynomialName) {
 			}
 			if (currentNode->exponent != 0) {
 				printf("x^%d", currentNode->exponent);
-			}
+			} else {
+        if (currentNode->coefficient == 1) {
+          printf("1");
+        }
+      }
 			if (currentNode->next != NULL) {
 				if (currentNode->next->coefficient != 0)
 					printf(" + ");
