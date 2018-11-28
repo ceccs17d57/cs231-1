@@ -66,7 +66,7 @@ void insert() {
 					printf("Out of memory. Cannot insert\n");
 			else
 				if (right<size) {
-					if (binaryTree[left] == -1) {
+					if (binaryTree[right] == -1) {
 						binaryTree[right] = data;
 						printf("Successfully inserted\n");
 					} else {
