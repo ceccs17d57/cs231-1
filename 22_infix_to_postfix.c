@@ -37,6 +37,7 @@ int main () {
   int i, top=-1;
   printf("Enter the infix expression : ");
   scanf(" %s", infix);
+  printf("Postfix : ");
   for (i=0; infix[i] != '\0'; i++) {
     if (isOperand(infix[i])) {
       printf("%c", infix[i]);
@@ -59,4 +60,5 @@ int main () {
   while (top > -1) {
     printf("%c", stack[top--]);
   }
+  printf("\n");
 }

@@ -119,6 +119,7 @@ int showMenu() {
 					printf("Element not found\n");
 				else
 					printf("Node found\n");
+				break;
 			case '3':
 				delete();
 				break;
