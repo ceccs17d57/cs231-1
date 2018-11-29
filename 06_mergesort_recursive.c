@@ -1,3 +1,7 @@
+// Nikhil M Tomy
+// S3D
+// 37
+
 #include <stdio.h>
 
 int merge(int a[], int l, int m, int r) {

@@ -1,9 +1,6 @@
-/*
- * 01
- * Sequential Search
- * Author : Nikhil M Tomy
- * 
- */
+// Nikhil M Tomy
+// S3D
+// 37
 
 #include <stdio.h>
 

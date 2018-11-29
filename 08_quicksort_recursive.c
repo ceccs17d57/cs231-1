@@ -1,3 +1,7 @@
+// Nikhil M Tomy
+// S3D
+// 37
+
 #include <stdio.h>
 
 void swap(int *a, int *b) {

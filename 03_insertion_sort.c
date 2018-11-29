@@ -1,9 +1,6 @@
-/*
- * 03
- * Insertion Sort
- * Author : Nikhil M Tomy
- * 
- */
+// Nikhil M Tomy
+// S3D
+// 37
 
 #include <stdio.h>
 

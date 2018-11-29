@@ -1,3 +1,7 @@
+// Nikhil M Tomy
+// S3D
+// 37
+
 #include <stdio.h>
 #include <stdlib.h>
 int power(int base, int exponent) {

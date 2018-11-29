@@ -1,3 +1,7 @@
+// Nikhil M Tomy
+// S3D
+// 37
+
 #include <stdio.h>
 
 int stack[100], n=100, top;
