@@ -56,7 +56,7 @@ int showMenu() {
 	char choice='1';
 	int data, previousData, nextData;
 	do {
-		printf("\n\tLINKED LIST\n");
+		printf("\n\tSTACK USING LINKED LIST\n");
 		printf("1. Push\n");
 		printf("2. Pop\n");
 		printf("3. Print\n");

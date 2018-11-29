@@ -137,7 +137,7 @@ int main() {
 	printf("\nMultiplying polynomials\n");
 	printPolynomial(polynomial1, 'P');
 	printPolynomial(polynomial2, 'Q');
-	printf("Sum\n");
+	printf("Product\n");
 	multiplyPolynomial(polynomial1, polynomial2, polynomial3);
 	printPolynomial(polynomial3, 'R');
 

@@ -69,7 +69,7 @@ int main() {
 	char ans;
 	int data;
 	do {
-		printf("\n\n\tTwo Stack Using array\n");
+		printf("\tTwo Stack Using array\n");
 		printf("\tBeg Stack\n1. Beg Push\n2. Beg Pop\n3. Beg Display\n");
     printf("\tEnd Stack\n4. End Push\n5. End Pop\n6. End Display\n");
     printf("7. Exit\nEnter your choice : ");

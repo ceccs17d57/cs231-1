@@ -135,7 +135,7 @@ int showMenu() {
 	char choice;
 	int data, previousData, nextData;
 	while (1) {
-		printf("\n\n\tDoubly Linked List\n");
+		printf("\n\n\tCircular Doubly Linked List\n");
 		printf("1. Insert at Front\n");
 		printf("2. Insert before\n");
 		printf("3. Insert after\n");

@@ -125,21 +125,27 @@ void delete() {
   } else {
     if (toDelete->right == NULL && toDelete->left == NULL) {
       parent = getParent(ROOT, toDelete);
-      if (parent->right == toDelete)
-        parent->right = NULL;
-      else if (parent->left == toDelete)
-        parent->left = NULL;
+	  if (parent!=NULL) {
+		  if (parent->right == toDelete)
+			parent->right = NULL;
+		  else if (parent->left == toDelete)
+			parent->left = NULL;
+	  }
       free(toDelete);
+	  toDelete = NULL;
       printf("Successfully deleted\n");
     } else if (toDelete->right != NULL && toDelete->left != NULL) {
       succ = successor(toDelete);
       toDelete->data = succ->data;
       parent = getParent(ROOT, succ);
-      if (parent->right == succ)
-        parent->right = NULL;
-      else if (parent->left == succ)
-        parent->left = NULL;
+	  if (parent != NULL) {
+		  if (parent->right == succ)
+			parent->right = NULL;
+		  else if (parent->left == succ)
+			parent->left = NULL;
+	  }
       free(succ);
+	  succ == NULL;
       printf("Successfully deleted\n");
     } else {
       parent = getParent(ROOT, toDelete);
