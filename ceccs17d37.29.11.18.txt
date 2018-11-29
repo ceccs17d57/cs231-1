@@ -1,0 +1,1900 @@
+Script started on 2018-11-29 12:47:58+05:30 [TERM="xterm-termite" TTY="/dev/pts/0" COLUMNS="194" LINES="46"]
+[?1h=$ for i in *.c; do IFS='.'
+read -ra name <<< "$i"; gcc -o ${name[0]} $i; done[C[C[C[1@"[C[C[1@"
+[?1h=$ ./01_sequential_search 
+[?1l>Enter number of elements : 5
+Enter elements
+2
+8
+1
+6
+3
+Enter element to search : 6
+Element found at position 4
+[?1h=$ ./02_selection_sort 
+[?1l>Enter number of elements in the array : 5
+Enter the array
+2
+8
+1
+6
+3
+Sorted array 
+1
+2
+3
+6
+8
+[?1h=$ ./03_insertion_sort 
+[?1l>Enter size of the array : 5
+Enter array
+2
+8
+1
+6
+3
+Sorted array
+1
+2
+3
+6
+8
+[?1h=$ ./04_bubble_sort 
+[?1l>Enter number of elements in the array : 5
+Enter the array
+2
+8
+1
+6
+3
+Sorted array 
+1
+2
+3
+6
+8
+[?1h=$ ./05_mergesort 
+[?1l>Enter array size : 5
+Enter array elements
+2
+8
+1
+6
+3
+Sorted array
+1
+2
+3
+6
+8
+[?1h=$ ./06_mergesort_recursive 
+[?1l>Enter size of the array : 5
+Enter array
+2
+8
+1
+6
+3
+
+Sorted Array
+1
+2
+3
+6
+8
+[?1h=$ ./07_quicksort_iterative 
+[?1l>Enter size of the array : 5
+Enter array elements
+28163    
+8
+1
+6
+3
+Sorted Array
+1
+2
+3
+6
+8
+[?1h=$ ./08_quicksort_recursive 
+[?1l>Enter size of the array : 5
+Enter array elements
+28163    
+81 
+1
+6
+3
+Sorted Array
+1
+2
+3
+6
+8
+[?1h=$ ./a[K[K[K./08[K9_heap_sort 
+[?1l>Enter size of the array : 5
+Enter array elements
+2
+8
+1
+6
+3
+Sorted Array
+1
+2
+3
+6
+8
+[?1h=$ ./10_binary_search 
+[?1l>Enter number of elements : 5
+Enter elements
+2
+6
+1
+8
+3
+Sorted array
+1
+2
+3
+6
+8
+Enter element to search : 6
+Element found at position 4
+[?1h=$ ./11_singly_linked_list 
+[?1l>
+	LINKED LIST
+1. Insert at Front
+2. Insert before
+3. Insert after
+4. Insert at End
+5. Print Linked List
+6. Delete first node
+7. Delete last node
+8. Delete node
+9. Delete all
+0. Exit
+Enter your choice : 1
+
+Enter new data : 1
+
+	LINKED LIST
+1. Insert at Front
+2. Insert before
+3. Insert after
+4. Insert at End
+5. Print Linked List
+6. Delete first node
+7. Delete last node
+8. Delete node
+9. Delete all
+0. Exit
+Enter your choice : 3 4
+
+Enter new data : 4
+
+	LINKED LIST
+1. Insert at Front
+2. Insert before
+3. Insert after
+4. Insert at End
+5. Print Linked List
+6. Delete first node
+7. Delete last node
+8. Delete node
+9. Delete all
+0. Exit
+Enter your choice : 2
+
+Enter data before which new node is to be created : 3 4
+Enter new data : 3
+
+	LINKED LIST
+1. Insert at Front
+2. Insert before
+3. Insert after
+4. Insert at End
+5. Print Linked List
+6. Delete first node
+7. Delete last node
+8. Delete node
+9. Delete all
+0. Exit
+Enter your choice : 3
+
+Enter data after which new node is to be created : 1
+Enter new data : 2
+
+	LINKED LIST
+1. Insert at Front
+2. Insert before
+3. Insert after
+4. Insert at End
+5. Print Linked List
+6. Delete first node
+7. Delete last node
+8. Delete node
+9. Delete all
+0. Exit
+Enter your choice : 5
+
+
+Linked List
+HEADER->1->2->3->4->NULL
+
+	LINKED LIST
+1. Insert at Front
+2. Insert before
+3. Insert after
+4. Insert at End
+5. Print Linked List
+6. Delete first node
+7. Delete last node
+8. Delete node
+9. Delete all
+0. Exit
+Enter your choice : 6
+
+
+	LINKED LIST
+1. Insert at Front
+2. Insert before
+3. Insert after
+4. Insert at End
+5. Print Linked List
+6. Delete first node
+7. Delete last node
+8. Delete node
+9. Delete all
+0. Exit
+Enter your choice : 5
+
+
+Linked List
+HEADER->2->3->4->NULL
+
+	LINKED LIST
+1. Insert at Front
+2. Insert before
+3. Insert after
+4. Insert at End
+5. Print Linked List
+6. Delete first node
+7. Delete last node
+8. Delete node
+9. Delete all
+0. Exit
+Enter your choice : 7
+
+
+	LINKED LIST
+1. Insert at Front
+2. Insert before
+3. Insert after
+4. Insert at End
+5. Print Linked List
+6. Delete first node
+7. Delete last node
+8. Delete node
+9. Delete all
+0. Exit
+Enter your choice : 5
+
+
+Linked List
+HEADER->2->3->NULL
+
+	LINKED LIST
+1. Insert at Front
+2. Insert before
+3. Insert after
+4. Insert at End
+5. Print Linked List
+6. Delete first node
+7. Delete last node
+8. Delete node
+9. Delete all
+0. Exit
+Enter your choice : 8
+
+Enter data to be deleted : 3
+
+	LINKED LIST
+1. Insert at Front
+2. Insert before
+3. Insert after
+4. Insert at End
+5. Print Linked List
+6. Delete first node
+7. Delete last node
+8. Delete node
+9. Delete all
+0. Exit
+Enter your choice : 5
+
+
+Linked List
+HEADER->2->NULL
+
+	LINKED LIST
+1. Insert at Front
+2. Insert before
+3. Insert after
+4. Insert at End
+5. Print Linked List
+6. Delete first node
+7. Delete last node
+8. Delete node
+9. Delete all
+0. Exit
+Enter your choice : 0
+
+[?1h=$ A./11_singly_linked_list [C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K2_doubly_linked_list 
+[?1l>
+
+	Doubly Linked List
+1. Insert at Front
+2. Insert before
+3. Insert after
+4. Insert at End
+5. Print Linked List
+6. Delete first node
+7. Delete node
+8. Delete last node
+9. Delete all
+0. Exit
+Enter your choice : 1
+
+Enter new data : 1
+
+
+	Doubly Linked List
+1. Insert at Front
+2. Insert before
+3. Insert after
+4. Insert at End
+5. Print Linked List
+6. Delete first node
+7. Delete node
+8. Delete last node
+9. Delete all
+0. Exit
+Enter your choice : 4
+
+Enter new data : 4
+
+
+	Doubly Linked List
+1. Insert at Front
+2. Insert before
+3. Insert after
+4. Insert at End
+5. Print Linked List
+6. Delete first node
+7. Delete node
+8. Delete last node
+9. Delete all
+0. Exit
+Enter your choice : 2
+
+Enter new data : 4 3
+Enter data of the node before which new node is to be created : 4
+
+
+	Doubly Linked List
+1. Insert at Front
+2. Insert before
+3. Insert after
+4. Insert at End
+5. Print Linked List
+6. Delete first node
+7. Delete node
+8. Delete last node
+9. Delete all
+0. Exit
+Enter your choice : 3
+
+Enter new data : 2
+Enter data of the node after which new node is to be created : 1
+
+
+	Doubly Linked List
+1. Insert at Front
+2. Insert before
+3. Insert after
+4. Insert at End
+5. Print Linked List
+6. Delete first node
+7. Delete node
+8. Delete last node
+9. Delete all
+0. Exit
+Enter your choice : 5
+
+NULL<-HEADER<->1<->2<->3<->4->NULL
+
+
+	Doubly Linked List
+1. Insert at Front
+2. Insert before
+3. Insert after
+4. Insert at End
+5. Print Linked List
+6. Delete first node
+7. Delete node
+8. Delete last node
+9. Delete all
+0. Exit
+Enter your choice : 6
+
+
+
+	Doubly Linked List
+1. Insert at Front
+2. Insert before
+3. Insert after
+4. Insert at End
+5. Print Linked List
+6. Delete first node
+7. Delete node
+8. Delete last node
+9. Delete all
+0. Exit
+Enter your choice : 5
+
+NULL<-HEADER<->2<->3<->4->NULL
+
+
+	Doubly Linked List
+1. Insert at Front
+2. Insert before
+3. Insert after
+4. Insert at End
+5. Print Linked List
+6. Delete first node
+7. Delete node
+8. Delete last node
+9. Delete all
+0. Exit
+Enter your choice : 7
+
+Enter data of the node to be deleted : 5
+Deletion failed. Node with matching data not found
+
+
+	Doubly Linked List
+1. Insert at Front
+2. Insert before
+3. Insert after
+4. Insert at End
+5. Print Linked List
+6. Delete first node
+7. Delete node
+8. Delete last node
+9. Delete all
+0. Exit
+Enter your choice : 8
+
+
+
+	Doubly Linked List
+1. Insert at Front
+2. Insert before
+3. Insert after
+4. Insert at End
+5. Print Linked List
+6. Delete first node
+7. Delete node
+8. Delete last node
+9. Delete all
+0. Exit
+Enter your choice : 7
+
+Enter data of the node to be deleted : 3
+
+
+	Doubly Linked List
+1. Insert at Front
+2. Insert before
+3. Insert after
+4. Insert at End
+5. Print Linked List
+6. Delete first node
+7. Delete node
+8. Delete last node
+9. Delete all
+0. Exit
+Enter your choice : 5
+
+NULL<-HEADER<->2->NULL
+
+
+	Doubly Linked List
+1. Insert at Front
+2. Insert before
+3. Insert after
+4. Insert at End
+5. Print Linked List
+6. Delete first node
+7. Delete node
+8. Delete last node
+9. Delete all
+0. Exit
+Enter your choice : 0
+
+[?1h=$ ./13_circular_singly_linked_list 
+[?1l>
+
+	CIRCULAR SINGLY LINKED LIST
+1. Insert at front
+2. Insert before
+3. Insert after
+4. Insert at end
+5. Print all
+6. Delete first
+7. Delete node
+8. Delete last
+9. Delet all
+0. Exit
+Enter your choice : 1
+Enter new data : 1
+
+
+	CIRCULAR SINGLY LINKED LIST
+1. Insert at front
+2. Insert before
+3. Insert after
+4. Insert at end
+5. Print all
+6. Delete first
+7. Delete node
+8. Delete last
+9. Delet all
+0. Exit
+Enter your choice : 4
+Enter new data : 4
+
+
+	CIRCULAR SINGLY LINKED LIST
+1. Insert at front
+2. Insert before
+3. Insert after
+4. Insert at end
+5. Print all
+6. Delete first
+7. Delete node
+8. Delete last
+9. Delet all
+0. Exit
+Enter your choice : 2
+Enter new data : 3
+Enter data of the node before which new node is to be created : 4
+
+
+	CIRCULAR SINGLY LINKED LIST
+1. Insert at front
+2. Insert before
+3. Insert after
+4. Insert at end
+5. Print all
+6. Delete first
+7. Delete node
+8. Delete last
+9. Delet all
+0. Exit
+Enter your choice : 3
+Enter new data : 2
+Enter data of the node after which new node is to be created : 1
+
+
+	CIRCULAR SINGLY LINKED LIST
+1. Insert at front
+2. Insert before
+3. Insert after
+4. Insert at end
+5. Print all
+6. Delete first
+7. Delete node
+8. Delete last
+9. Delet all
+0. Exit
+Enter your choice : 5
+HEADER->1->2->3->4->HEADER
+
+
+	CIRCULAR SINGLY LINKED LIST
+1. Insert at front
+2. Insert before
+3. Insert after
+4. Insert at end
+5. Print all
+6. Delete first
+7. Delete node
+8. Delete last
+9. Delet all
+0. Exit
+Enter your choice : 6
+
+
+	CIRCULAR SINGLY LINKED LIST
+1. Insert at front
+2. Insert before
+3. Insert after
+4. Insert at end
+5. Print all
+6. Delete first
+7. Delete node
+8. Delete last
+9. Delet all
+0. Exit
+Enter your choice : 5
+HEADER->2->3->4->HEADER
+
+
+	CIRCULAR SINGLY LINKED LIST
+1. Insert at front
+2. Insert before
+3. Insert after
+4. Insert at end
+5. Print all
+6. Delete first
+7. Delete node
+8. Delete last
+9. Delet all
+0. Exit
+Enter your choice : 7
+Enter data of the node to be deleted : 3
+
+
+	CIRCULAR SINGLY LINKED LIST
+1. Insert at front
+2. Insert before
+3. Insert after
+4. Insert at end
+5. Print all
+6. Delete first
+7. Delete node
+8. Delete last
+9. Delet all
+0. Exit
+Enter your choice : 8
+
+
+	CIRCULAR SINGLY LINKED LIST
+1. Insert at front
+2. Insert before
+3. Insert after
+4. Insert at end
+5. Print all
+6. Delete first
+7. Delete node
+8. Delete last
+9. Delet all
+0. Exit
+Enter your choice : 5
+HEADER->2->HEADER
+
+
+	CIRCULAR SINGLY LINKED LIST
+1. Insert at front
+2. Insert before
+3. Insert after
+4. Insert at end
+5. Print all
+6. Delete first
+7. Delete node
+8. Delete last
+9. Delet all
+0. Exit
+Enter your choice : 0
+[?1h=$ ./14_circular_doubly_linked_list 
+[?1l>
+
+	Circular Doubly Linked List
+1. Insert at Front
+2. Insert before
+3. Insert after
+4. Insert at End
+5. Print Linked List
+6. Delete first node
+7. Delete node
+8. Delete last node
+9. Delete all
+0. Exit
+Enter your choice : 1
+
+Enter new data : 1
+
+
+	Circular Doubly Linked List
+1. Insert at Front
+2. Insert before
+3. Insert after
+4. Insert at End
+5. Print Linked List
+6. Delete first node
+7. Delete node
+8. Delete last node
+9. Delete all
+0. Exit
+Enter your choice : 4
+
+Enter new data : 4
+
+
+	Circular Doubly Linked List
+1. Insert at Front
+2. Insert before
+3. Insert after
+4. Insert at End
+5. Print Linked List
+6. Delete first node
+7. Delete node
+8. Delete last node
+9. Delete all
+0. Exit
+Enter your choice : 2
+
+Enter new data : 4 3
+Enter data of the node before which new node is to be created : 4
+
+
+	Circular Doubly Linked List
+1. Insert at Front
+2. Insert before
+3. Insert after
+4. Insert at End
+5. Print Linked List
+6. Delete first node
+7. Delete node
+8. Delete last node
+9. Delete all
+0. Exit
+Enter your choice : 3
+
+Enter new data : 2
+Enter data of the node after which new node is to be created : 1
+
+
+	Circular Doubly Linked List
+1. Insert at Front
+2. Insert before
+3. Insert after
+4. Insert at End
+5. Print Linked List
+6. Delete first node
+7. Delete node
+8. Delete last node
+9. Delete all
+0. Exit
+Enter your choice : 5
+
+HEADER<->1<->2<->3<->4->HEADER
+
+
+	Circular Doubly Linked List
+1. Insert at Front
+2. Insert before
+3. Insert after
+4. Insert at End
+5. Print Linked List
+6. Delete first node
+7. Delete node
+8. Delete last node
+9. Delete all
+0. Exit
+Enter your choice : 6
+
+
+
+	Circular Doubly Linked List
+1. Insert at Front
+2. Insert before
+3. Insert after
+4. Insert at End
+5. Print Linked List
+6. Delete first node
+7. Delete node
+8. Delete last node
+9. Delete all
+0. Exit
+Enter your choice : 7
+
+Enter data of the node to be deleted : 3
+
+
+	Circular Doubly Linked List
+1. Insert at Front
+2. Insert before
+3. Insert after
+4. Insert at End
+5. Print Linked List
+6. Delete first node
+7. Delete node
+8. Delete last node
+9. Delete all
+0. Exit
+Enter your choice : 8
+
+
+
+	Circular Doubly Linked List
+1. Insert at Front
+2. Insert before
+3. Insert after
+4. Insert at End
+5. Print Linked List
+6. Delete first node
+7. Delete node
+8. Delete last node
+9. Delete all
+0. Exit
+Enter your choice : 5
+
+HEADER<->2->HEADER
+
+
+	Circular Doubly Linked List
+1. Insert at Front
+2. Insert before
+3. Insert after
+4. Insert at End
+5. Print Linked List
+6. Delete first node
+7. Delete node
+8. Delete last node
+9. Delete all
+0. Exit
+Enter your choice : 0
+
+[?1h=$ ./15_representation_of_polynomial_using_linked_list 
+[?1l>Enter coefficient : 2
+Enter exponent : 2
+
+1. Add more terms
+2. Print and exit
+Enter your choice : 1
+
+Enter coefficient : 1
+Enter exponent : 1
+
+1. Add more terms
+2. Print and exit
+Enter your choice : 1 2
+
+
+F(p) = 2x^2 + x^1
+[?1h=$ ./15_representation_of_polynomial_using_linked_list [C[C[K./16_polynomial_addition 
+[?1l>	Polynomial 1
+Enter coefficient : 2
+Enter exponent : 2
+
+1. Add more terms
+2. Continue
+Enter your choice : 1
+
+Enter coefficient : 1
+Enter exponent : 1
+
+1. Add more terms
+2. Continue
+Enter your choice : 2
+
+	Polynomial 2
+Enter coefficient : 2
+Enter exponent : 2
+
+1. Add more terms
+2. Continue
+Enter your choice : 1
+
+Enter coefficient : 1
+Enter exponent : 1
+
+1. Add more terms
+2. Continue
+Enter your choice : 2
+
+
+Adding polynomials
+P(x) = 2x^2 + x^1
+Q(x) = 2x^2 + x^1
+Sum
+R(x) = 4x^2 + 2x^1
+[?1h=$ ./17_polynomial_multiplication 
+[?1l>	Polynomial 1
+Enter coefficient : 2
+Enter exponent : 2
+
+1. Add more terms
+2. Continue
+Enter your choice : 1
+
+Enter coefficient : 1
+Enter exponent : 1
+
+1. Add more terms
+2. Continue
+Enter your choice : 2
+
+	Polynomial 2
+Enter coefficient : 2
+Enter exponent : 2
+
+1. Add more terms
+2. Continue
+Enter your choice : 1
+
+Enter coefficient : 1
+Enter exponent : 1
+
+1. Add more terms
+2. Continue
+Enter your choice : 2
+
+
+Multiplying polynomials
+P(x) = 2x^2 + x^1
+Q(x) = 2x^2 + x^1
+Sum
+R(x) = 4x^4 + 4x^3 + x^2
+[?1h=$ ./17_polynomial_multiplication [C[C[K./18_stack_using_array 
+[?1l>
+
+	Stack Using array
+1. Push
+2. Pop
+3. Display
+4. Exit
+Enter your choice : 1
+Enter data to be pushed : 1
+
+
+	Stack Using array
+1. Push
+2. Pop
+3. Display
+4. Exit
+Enter your choice : 1
+Enter data to be pushed : 2
+
+
+	Stack Using array
+1. Push
+2. Pop
+3. Display
+4. Exit
+Enter your choice : 1
+Enter data to be pushed : 3
+
+
+	Stack Using array
+1. Push
+2. Pop
+3. Display
+4. Exit
+Enter your choice : 3
+
+
+Stack contents
+3
+2
+1
+
+
+
+	Stack Using array
+1. Push
+2. Pop
+3. Display
+4. Exit
+Enter your choice : 2
+Popped element is 3
+
+
+	Stack Using array
+1. Push
+2. Pop
+3. Display
+4. Exit
+Enter your choice : 3
+
+
+Stack contents
+2
+1
+
+
+
+	Stack Using array
+1. Push
+2. Pop
+3. Display
+4. Exit
+Enter your choice : 4
+[?1h=$ ./19_stack_using_linked_list 
+[?1l>
+	STACK USING LINKED LIST
+1. Push
+2. Pop
+3. Print
+4. Exit
+Enter your choice : 1
+
+Enter new data : 1
+
+	STACK USING LINKED LIST
+1. Push
+2. Pop
+3. Print
+4. Exit
+Enter your choice : 1
+
+Enter new data : 2
+
+	STACK USING LINKED LIST
+1. Push
+2. Pop
+3. Print
+4. Exit
+Enter your choice : 1
+
+Enter new data : 3
+
+	STACK USING LINKED LIST
+1. Push
+2. Pop
+3. Print
+4. Exit
+Enter your choice : 3
+
+
+Linked List
+TOP->3
+2
+1
+
+
+	STACK USING LINKED LIST
+1. Push
+2. Pop
+3. Print
+4. Exit
+Enter your choice : 2
+
+
+	STACK USING LINKED LIST
+1. Push
+2. Pop
+3. Print
+4. Exit
+Enter your choice : 3
+
+
+Linked List
+TOP->2
+1
+
+
+	STACK USING LINKED LIST
+1. Push
+2. Pop
+3. Print
+4. Exit
+Enter your choice : 4
+
+[?1h=$ ./1[K20_multiple_stack_using_array 
+[?1l>
+
+	Two Stack Using array
+	Beg Stack
+1. Beg Push
+2. Beg Pop
+3. Beg Display
+	End Stack
+4. End Push
+5. End Pop
+6. End Display
+7. Exit
+Enter your choice : 1
+Enter data to be pushed : 1
+
+	Two Stack Using array
+	Beg Stack
+1. Beg Push
+2. Beg Pop
+3. Beg Display
+	End Stack
+4. End Push
+5. End Pop
+6. End Display
+7. Exit
+Enter your choice : 1
+Enter data to be pushed : 2
+
+	Two Stack Using array
+	Beg Stack
+1. Beg Push
+2. Beg Pop
+3. Beg Display
+	End Stack
+4. End Push
+5. End Pop
+6. End Display
+7. Exit
+Enter your choice : 1
+Enter data to be pushed : 3
+
+	Two Stack Using array
+	Beg Stack
+1. Beg Push
+2. Beg Pop
+3. Beg Display
+	End Stack
+4. End Push
+5. End Pop
+6. End Display
+7. Exit
+Enter your choice : 3
+
+Stack contents
+3
+2
+1
+
+	Two Stack Using array
+	Beg Stack
+1. Beg Push
+2. Beg Pop
+3. Beg Display
+	End Stack
+4. End Push
+5. End Pop
+6. End Display
+7. Exit
+Enter your choice : 2
+Popped element is 3
+
+	Two Stack Using array
+	Beg Stack
+1. Beg Push
+2. Beg Pop
+3. Beg Display
+	End Stack
+4. End Push
+5. End Pop
+6. End Display
+7. Exit
+Enter your choice : 3
+
+Stack contents
+2
+1
+
+	Two Stack Using array
+	Beg Stack
+1. Beg Push
+2. Beg Pop
+3. Beg Display
+	End Stack
+4. End Push
+5. End Pop
+6. End Display
+7. Exit
+Enter your choice : 4
+Enter data to be pushed : 1
+
+	Two Stack Using array
+	Beg Stack
+1. Beg Push
+2. Beg Pop
+3. Beg Display
+	End Stack
+4. End Push
+5. End Pop
+6. End Display
+7. Exit
+Enter your choice : 4
+Enter data to be pushed : 2
+
+	Two Stack Using array
+	Beg Stack
+1. Beg Push
+2. Beg Pop
+3. Beg Display
+	End Stack
+4. End Push
+5. End Pop
+6. End Display
+7. Exit
+Enter your choice : 4
+Enter data to be pushed : 3
+
+	Two Stack Using array
+	Beg Stack
+1. Beg Push
+2. Beg Pop
+3. Beg Display
+	End Stack
+4. End Push
+5. End Pop
+6. End Display
+7. Exit
+Enter your choice : 6
+
+Stack contents
+3
+2
+1
+
+	Two Stack Using array
+	Beg Stack
+1. Beg Push
+2. Beg Pop
+3. Beg Display
+	End Stack
+4. End Push
+5. End Pop
+6. End Display
+7. Exit
+Enter your choice : 5
+Popped element is 3
+
+	Two Stack Using array
+	Beg Stack
+1. Beg Push
+2. Beg Pop
+3. Beg Display
+	End Stack
+4. End Push
+5. End Pop
+6. End Display
+7. Exit
+Enter your choice : 6
+
+Stack contents
+2
+1
+
+	Two Stack Using array
+	Beg Stack
+1. Beg Push
+2. Beg Pop
+3. Beg Display
+	End Stack
+4. End Push
+5. End Pop
+6. End Display
+7. Exit
+Enter your choice : 7
+[?1h=$ ./21_representation_of_arithmetic_expressions_linked_list 
+[?1l>Enter arithmatic expression : a+b
+Entered experssion : a+b
+[?1h=$ ./22_infix_to_postfix 
+[?1l>Enter the infix expression : a+b+c^[[D      *c
+Postfix : abc*+
+[?1h=$ ./23_postfix_expression_evaluvation 
+[?1l>Enter the postfix expression : 12+
+3
+[?1h=$ ./24_infix_expression_evaluvation 
+[?1l>Enter the infix expression : 1+2*3
+Final result : 7
+[?1h=$ ./26_queue_using_array 
+[?1l>
+	Queue using array
+1.Enqueue
+2.Dequeue
+3.Display
+4.Exit
+Enter your choice : 1
+Enter data to be entered : 1
+
+	Queue using array
+1.Enqueue
+2.Dequeue
+3.Display
+4.Exit
+Enter your choice : 1
+Enter data to be entered : 2
+
+	Queue using array
+1.Enqueue
+2.Dequeue
+3.Display
+4.Exit
+Enter your choice : 1
+Enter data to be entered : 3
+
+	Queue using array
+1.Enqueue
+2.Dequeue
+3.Display
+4.Exit
+Enter your choice : 3
+1
+2
+3
+
+	Queue using array
+1.Enqueue
+2.Dequeue
+3.Display
+4.Exit
+Enter your choice : 2
+Deleted element : 1
+
+	Queue using array
+1.Enqueue
+2.Dequeue
+3.Display
+4.Exit
+Enter your choice : 3
+2
+3
+
+	Queue using array
+1.Enqueue
+2.Dequeue
+3.Display
+4.Exit
+Enter your choice : 4
+[?1h=$ ./27_deque_using_array 
+[?1l>
+	Queue using array
+1.Enqueue Front
+2.Enqueue Rear
+3.Dequeue Front
+4.Dequeue Rear
+5.Display
+6.Exit
+Enter your choice : 1
+Enter data to be inserted : 1
+
+	Queue using array
+1.Enqueue Front
+2.Enqueue Rear
+3.Dequeue Front
+4.Dequeue Rear
+5.Display
+6.Exit
+Enter your choice : 2
+Enter data to be entered : 1
+
+	Queue using array
+1.Enqueue Front
+2.Enqueue Rear
+3.Dequeue Front
+4.Dequeue Rear
+5.Display
+6.Exit
+Enter your choice : 2
+Enter data to be entered : 2
+
+	Queue using array
+1.Enqueue Front
+2.Enqueue Rear
+3.Dequeue Front
+4.Dequeue Rear
+5.Display
+6.Exit
+Enter your choice : 2
+Enter data to be entered : 3
+
+	Queue using array
+1.Enqueue Front
+2.Enqueue Rear
+3.Dequeue Front
+4.Dequeue Rear
+5.Display
+6.Exit
+Enter your choice : 5
+1
+1
+2
+3
+
+	Queue using array
+1.Enqueue Front
+2.Enqueue Rear
+3.Dequeue Front
+4.Dequeue Rear
+5.Display
+6.Exit
+Enter your choice : 3
+Deleted element : 1
+
+	Queue using array
+1.Enqueue Front
+2.Enqueue Rear
+3.Dequeue Front
+4.Dequeue Rear
+5.Display
+6.Exit
+Enter your choice : 4
+Deleted element : 3
+
+	Queue using array
+1.Enqueue Front
+2.Enqueue Rear
+3.Dequeue Front
+4.Dequeue Rear
+5.Display
+6.Exit
+Enter your choice : 5
+1
+2
+
+	Queue using array
+1.Enqueue Front
+2.Enqueue Rear
+3.Dequeue Front
+4.Dequeue Rear
+5.Display
+6.Exit
+Enter your choice : 6
+[?1h=$ ./28_circular_queue_using_array 
+[?1l>
+	Queue using array
+1.Enqueue
+2.Dequeue
+3.Display
+4.Exit
+Enter your choice : 1
+Enter data to be entered : 1
+
+	Queue using array
+1.Enqueue
+2.Dequeue
+3.Display
+4.Exit
+Enter your choice : 1
+Enter data to be entered : 2
+
+	Queue using array
+1.Enqueue
+2.Dequeue
+3.Display
+4.Exit
+Enter your choice : 1
+Enter data to be entered : 3
+
+	Queue using array
+1.Enqueue
+2.Dequeue
+3.Display
+4.Exit
+Enter your choice : 4 5
+
+	Queue using array
+1.Enqueue
+2.Dequeue
+3.Display
+4.Exit
+Enter your choice : 3
+1:2:3:-:-:-:-:-:-:-:
+	Queue using array
+1.Enqueue
+2.Dequeue
+3.Display
+4.Exit
+Enter your choice : 2
+
+	Queue using array
+1.Enqueue
+2.Dequeue
+3.Display
+4.Exit
+Enter your choice : 3
+-:2:3:-:-:-:-:-:-:-:
+	Queue using array
+1.Enqueue
+2.Dequeue
+3.Display
+4.Exit
+Enter your choice : 4
+[?1h=$ ./29_queue_using_linked_list 
+[?1l>
+	Queue using array
+1.Enqueue
+2.Dequeue
+3.Display
+4.Exit
+Enter your choice : 1
+Enter data to be entered : 1
+
+	Queue using array
+1.Enqueue
+2.Dequeue
+3.Display
+4.Exit
+Enter your choice : 1
+Enter data to be entered : 2
+
+	Queue using array
+1.Enqueue
+2.Dequeue
+3.Display
+4.Exit
+Enter your choice : 1
+Enter data to be entered : 3
+
+	Queue using array
+1.Enqueue
+2.Dequeue
+3.Display
+4.Exit
+Enter your choice : 3
+
+Linked List
+HEADER->1->2->3->NULL
+
+	Queue using array
+1.Enqueue
+2.Dequeue
+3.Display
+4.Exit
+Enter your choice : 2
+
+	Queue using array
+1.Enqueue
+2.Dequeue
+3.Display
+4.Exit
+Enter your choice : 3
+
+Linked List
+HEADER->2->3->NULL
+
+	Queue using array
+1.Enqueue
+2.Dequeue
+3.Display
+4.Exit
+Enter your choice : 4
+[?1h=$ ./30_deque_using_linked_list 
+[?1l>
+	Queue using array
+1.Enqueue Front
+2.Enqueue Rear
+3.Dequeue Front
+4.Dequeue Rear
+5.Display
+6.Exit
+Enter your choice : 1
+Enter data : 1
+
+	Queue using array
+1.Enqueue Front
+2.Enqueue Rear
+3.Dequeue Front
+4.Dequeue Rear
+5.Display
+6.Exit
+Enter your choice : 2
+Enter data : 2
+
+	Queue using array
+1.Enqueue Front
+2.Enqueue Rear
+3.Dequeue Front
+4.Dequeue Rear
+5.Display
+6.Exit
+Enter your choice : 2
+Enter data : 3
+
+	Queue using array
+1.Enqueue Front
+2.Enqueue Rear
+3.Dequeue Front
+4.Dequeue Rear
+5.Display
+6.Exit
+Enter your choice : 2
+Enter data : 4
+
+	Queue using array
+1.Enqueue Front
+2.Enqueue Rear
+3.Dequeue Front
+4.Dequeue Rear
+5.Display
+6.Exit
+Enter your choice : 5
+
+Linked List
+HEADER->1->2->3->4->NULL
+
+	Queue using array
+1.Enqueue Front
+2.Enqueue Rear
+3.Dequeue Front
+4.Dequeue Rear
+5.Display
+6.Exit
+Enter your choice : 3
+
+	Queue using array
+1.Enqueue Front
+2.Enqueue Rear
+3.Dequeue Front
+4.Dequeue Rear
+5.Display
+6.Exit
+Enter your choice : 4
+
+	Queue using array
+1.Enqueue Front
+2.Enqueue Rear
+3.Dequeue Front
+4.Dequeue Rear
+5.Display
+6.Exit
+Enter your choice : 5
+
+Linked List
+HEADER->2->3->NULL
+
+	Queue using array
+1.Enqueue Front
+2.Enqueue Rear
+3.Dequeue Front
+4.Dequeue Rear
+5.Display
+6.Exit
+Enter your choice : 6
+[?1h=$ ./31[K[K[K[K [K./31[K2_binary_tree_using_linked_list 
+[?1l>
+	Binary Tree
+1. Insert
+2. Search
+3. Delete
+4. Print
+5. Exit
+Enter your choice : 1
+Enter data to be inserted : 1
+Successfully inserted
+
+	Binary Tree
+1. Insert
+2. Search
+3. Delete
+4. Print
+5. Exit
+Enter your choice : 2 1
+Enter data of the parent node : 1
+Enter data to be inserted : 2
+Enter which child to be inserted at (L/R) : l
+Succesfully inserted
+
+	Binary Tree
+1. Insert
+2. Search
+3. Delete
+4. Print
+5. Exit
+Enter your choice : 1
+Enter data of the parent node : 2 1
+Enter data to be inserted : 3
+Enter which child to be inserted at (L/R) : r
+Succesfully inserted
+
+	Binary Tree
+1. Insert
+2. Search
+3. Delete
+4. Print
+5. Exit
+Enter your choice : 3 4
+ 2 1 3
+	Binary Tree
+1. Insert
+2. Search
+3. Delete
+4. Print
+5. Exit
+Enter your choice : 2
+Enter data to be searched : 3
+Node found
+
+	Binary Tree
+1. Insert
+2. Search
+3. Delete
+4. Print
+5. Exit
+Enter your choice : 3
+Enter data of the node to be deleted : 1
+
+	Binary Tree
+1. Insert
+2. Search
+3. Delete
+4. Print
+5. Exit
+Enter your choice : 4
+ 2 3
+	Binary Tree
+1. Insert
+2. Search
+3. Delete
+4. Print
+5. Exit
+Enter your choice : 5
+[?1h=$ ./33_binary_tree_using_array 
+[?1l>
+	Binary Tree
+1. Insert
+2. Search
+3. Delete
+4. Print
+5. Exit
+Enter your choice : 1
+Enter data to be inserted : 1
+Successfully inserted
+
+	Binary Tree
+1. Insert
+2. Search
+3. Delete
+4. Print
+5. Exit
+Enter your choice : 1
+Enter data of the parent node : 2
+Key not found
+	Binary Tree
+1. Insert
+2. Search
+3. Delete
+4. Print
+5. Exit
+Enter your choice : 1
+Enter data of the parent node : 1
+Enter data to be inserted : 2
+Where do you want to enter the data (L/R): l
+Successfully inserted
+
+	Binary Tree
+1. Insert
+2. Search
+3. Delete
+4. Print
+5. Exit
+Enter your choice : 1
+Enter data of the parent node : 1
+Enter data to be inserted : 3
+Where do you want to enter the data (L/R): r
+Successfully inserted
+
+	Binary Tree
+1. Insert
+2. Search
+3. Delete
+4. Print
+5. Exit
+Enter your choice : 1
+Enter data of the parent node : 1
+Enter data to be inserted : 2 3
+Where do you want to enter the data (L/R): r
+Node not empty. Insertion failed
+
+	Binary Tree
+1. Insert
+2. Search
+3. Delete
+4. Print
+5. Exit
+Enter your choice : 4
+ 2 1 3
+	Binary Tree
+1. Insert
+2. Search
+3. Delete
+4. Print
+5. Exit
+Enter your choice : 3
+Enter data of the node to be deleted : 1
+Successfully deleted
+
+	Binary Tree
+1. Insert
+2. Search
+3. Delete
+4. Print
+5. Exit
+Enter your choice : 4
+ 2 3
+	Binary Tree
+1. Insert
+2. Search
+3. Delete
+4. Print
+5. Exit
+Enter your choice : 5
+
+[?1h=$ ./41_bst_using_linked_list 
+[?1l>
+	Binary Search Tree
+1. Insert
+2. Search
+3. Delete
+4. Print
+5. Exit
+Enter your choice : 1
+Enter data to be inserted : 2
+Succesfully inserted
+
+	Binary Search Tree
+1. Insert
+2. Search
+3. Delete
+4. Print
+5. Exit
+Enter your choice : 1
+Enter data to be inserted : 1
+Successfully inserted
+
+	Binary Search Tree
+1. Insert
+2. Search
+3. Delete
+4. Print
+5. Exit
+Enter your choice : 1
+Enter data to be inserted : 3
+Successfully inserted
+
+	Binary Search Tree
+1. Insert
+2. Search
+3. Delete
+4. Print
+5. Exit
+Enter your choice : 4
+ 1 2 3
+	Binary Search Tree
+1. Insert
+2. Search
+3. Delete
+4. Print
+5. Exit
+Enter your choice : 4
+ 1 2 3
+	Binary Search Tree
+1. Insert
+2. Search
+3. Delete
+4. Print
+5. Exit
+Enter your choice : 2
+Enter data to be searched : 2
+Node found
+
+	Binary Search Tree
+1. Insert
+2. Search
+3. Delete
+4. Print
+5. Exit
+Enter your choice : 3
+Enter data of the node to be deleted : 2
+Successfully deleted
+
+	Binary Search Tree
+1. Insert
+2. Search
+3. Delete
+4. Print
+5. Exit
+Enter your choice : 4
+ 1 3
+	Binary Search Tree
+1. Insert
+2. Search
+3. Delete
+4. Print
+5. Exit
+Enter your choice : 5
+[?1h=$ exit
+[?1l>exit
+
+Script done on 2018-11-29 13:51:03+05:30 [COMMAND_EXIT_CODE="0"]
